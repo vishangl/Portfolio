@@ -810,6 +810,52 @@ span
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+@media (max-width: 768px) {
+
+    .blog-post img, .project-card img {
+        height: 150px;
+    }
+
+    .blog-content h3, .project-content h4 {
+        font-size: 1rem;
+    }
+
+    .blog-content p, .project-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-group {
+        grid-template-columns: 1fr 1fr; /* Keep the 2x2 layout on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-group {
+        grid-template-columns: 1fr 1fr; /* Show one item per row for small screens */
+    }
+
+    .skill img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 #msg
 {
     color: var(--main-color);
