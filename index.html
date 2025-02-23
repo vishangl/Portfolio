@@ -10,9 +10,8 @@
 <body>
     <header class="header">
         <a href="#home" class="logo">Vishang <span>Lad</span></a>
-        
-        <i class='bx bx-menu' id="menu-icon"></i>
-
+    
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -287,6 +286,12 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+    </script>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
