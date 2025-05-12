@@ -753,3 +753,53 @@ span {
     font-size: 18px;
     text-align: center;
 }
+
+/* Certificates Section */
+.certificates {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--bg-color);
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.certificate {
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.certificate:hover {
+    box-shadow: 0 0 2rem var(--main-color);
+    transform: translateY(-5px);
+}
+
+.certificate img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.certificate-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.certificate-content h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.certificate-content p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
